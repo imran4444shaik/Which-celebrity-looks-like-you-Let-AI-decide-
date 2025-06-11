@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: celebrity-lookalike-app
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
+    healthCheckPath: /
+    buildCommand: ""
+    startCommand: ""
