@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y \
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --upgrade pip
+RUN pip install tensorflow==2.15.0
 RUN pip install -r requirements.txt
 
 # Copy project files
