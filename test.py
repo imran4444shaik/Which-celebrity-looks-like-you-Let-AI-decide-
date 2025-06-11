@@ -30,7 +30,8 @@ face_array = np.asarray(image)
 face_array = face_array.astype('float32')
 
 expanded_img = np.expand_dims(face_array,axis=0)
-preprocessed_img = preprocess_input(expanded_img)
+#preprocessed_img = preprocess_input(expanded_img)
+preprocessed_img = preprocess_input(expanded_img, version=2)
 result = model.predict(preprocessed_img).flatten()
 #print(result)
 #print(result.shape)
@@ -42,6 +43,7 @@ for i in range(len(feature_list)):
 index_pos = sorted(list(enumerate(similarity)),reverse=True,key=lambda x:x[1])[0][0]
 
 temp_img = cv2.imread(filenames[index_pos])
-cv2.imshow('output',temp_img)
-cv2.waitKey(0)
+#cv2.imshow('output',temp_img)
+#cv2.waitKey(0)
+print("Most similar image:", filenames[index_pos])
 # recommend that image
