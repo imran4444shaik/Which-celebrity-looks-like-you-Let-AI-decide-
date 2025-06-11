@@ -33,7 +33,8 @@ def feature_extractor(img_path,model):
     img = image.load_img(img_path,target_size=(224,224))
     img_array = image.img_to_array(img)
     expanded_img = np.expand_dims(img_array,axis=0)
-    preprocessed_img = preprocess_input(expanded_img)
+    #preprocessed_img = preprocess_input(expanded_img)
+    preprocessed_img = preprocess_input(expanded_img, version=2)
 
     result = model.predict(preprocessed_img).flatten()
 
