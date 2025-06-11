@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-pip install --upgrade pip
-pip install -r requirements.txt
-#pip install numpy==1.26.0  # Fix numpy compatibility
+# Explicitly set Python 3.10
+python3.10 -m pip install --upgrade pip
+python3.10 -m pip install -r requirements.txt
