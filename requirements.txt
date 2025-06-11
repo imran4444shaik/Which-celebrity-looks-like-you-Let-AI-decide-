@@ -22,7 +22,7 @@ Jinja2==3.1.6
 joblib==1.5.1
 jsonschema==4.24.0
 jsonschema-specifications==2025.4.1
-keras==2.11.0
+keras==2.15.0
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 #git+https://github.com/rcmalli/keras-vggface.git@master#egg=keras-vggface
