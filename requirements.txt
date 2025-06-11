@@ -13,7 +13,7 @@ gast==0.4.0
 gitdb==4.0.12
 GitPython==3.1.44
 google-auth==2.40.3
-google-auth-oauthlib==0.4.6
+google-auth-oauthlib==0.5.0  # Updated to >=0.5 for tensorboard compatibility
 google-pasta==0.2.0
 grpcio==1.73.0
 h5py==3.14.0
@@ -64,8 +64,8 @@ six==1.17.0
 smmap==5.0.2
 streamlit==1.45.1
 tenacity==9.1.2
-tensorboard==2.15.0  # Downgraded to match TF 2.15
-tensorboard-data-server==0.7.0  # Compatible with tensorboard 2.15
+tensorboard==2.15.0
+tensorboard-data-server==0.7.0
 tensorboard-plugin-wit==1.8.1
 tensorflow==2.15.0
 tensorflow-estimator==2.15.0
