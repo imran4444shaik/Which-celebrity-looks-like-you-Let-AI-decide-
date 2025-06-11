@@ -1,12 +1,12 @@
 # Core ML/DL
 tensorflow==2.12.0
-keras==2.10.0
-tensorboard==2.10.1
+tensorboard==2.12.0
+keras==2.12.0
 keras-vggface==0.6
 mtcnn==0.1.0
 
 # Numerical Computing
-numpy==1.23.5  # Critical for TF 2.10 compatibility
+numpy==1.23.5
 scipy==1.10.1
 pandas==2.0.3
 scikit-learn==1.2.2
@@ -21,7 +21,7 @@ altair==4.2.2
 pydeck==0.8.0
 
 # Supporting Packages
-protobuf==3.20.3  # Must stay at this version for TF 2.10
+protobuf==3.20.3
 absl-py==1.4.0
 gast==0.4.0
 grpcio==1.51.1
@@ -49,5 +49,5 @@ markdown==3.4.3
 opt-einsum==3.3.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow-estimator==2.10.0
-tensorflow-io-gcs-filesystem==0.27.0
+tensorflow-estimator==2.12.0
+tensorflow-io-gcs-filesystem==0.36.0
